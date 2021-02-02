@@ -250,7 +250,7 @@ button:focus {
 }
 
 #header {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/portrait_img/chalk-4829602_1920.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -439,6 +439,9 @@ button:focus {
     }
     .nav_icon {
         z-index: 3;
+    }
+    #header {
+        min-height: -webkit-fill-available;
     }
 }
 @media (max-width: 537px) {
