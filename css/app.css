@@ -441,7 +441,7 @@ button:focus {
         z-index: 3;
     }
     #header {
-        min-height: -webkit-fill-available;
+        background-position: unset;
     }
 }
 @media (max-width: 537px) {
