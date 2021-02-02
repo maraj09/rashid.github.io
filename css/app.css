@@ -248,17 +248,7 @@ button:focus {
 .top_nav_menu_iteam li a:hover {
     color: #ff3c30;
 }
-#header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    max-height: 960px;
-}
+
 #header {
     height: 100vh;
     background: url(../images/portrait_img/chalk-4829602_1920.jpg) no-repeat;
