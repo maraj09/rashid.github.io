@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --blue: #3490dc;
@@ -125,6 +125,7 @@ button:focus {
     top: 0;
     transition: top 0.3s;
     z-index: 10;
+    box-shadow: rgba(39, 39, 39, 0.7) 0px 10px 30px -10px;
 }
 .top_nav_right,
 .top_nav_left {
@@ -168,7 +169,11 @@ button:focus {
         display: none;
     }
     .top_nav {
+        margin-top: 25px;
         position: fixed;
+        background-color: rgba(245, 70, 70, 0);
+        transition: all .3s;
+
     }
     .top_nav_menu {
         display: block;
@@ -253,7 +258,6 @@ button:focus {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
     max-height: 960px;
-    min-height: 640px;
 }
 #header {
     height: 100vh;
@@ -262,7 +266,6 @@ button:focus {
     background-attachment: fixed;
     background-position: 50% 20%;
     max-height: 960px;
-    min-height: 640px;
 }
 
 .center {
@@ -302,8 +305,8 @@ button:focus {
     color: #ea0d00;
     transition: 0.7s;
     z-index: 10;
-    left: calc(50% - 20px);
-    top: calc(20vh - 80px);
+    left: calc(50% - 25px);
+    top: calc(20% - 90px);
 }
 .scrollDown:hover {
     color: #ffffff;
@@ -411,10 +414,7 @@ button:focus {
     .bigheadline_under {
         font-size: 4em;
     }
-    .scrollDown--active {
-        left: calc(100% - 75px);
-        top: calc(100% - 125px);
-    }
+    
 }
 @media (max-width: 991px) {
     .bigheadline {
@@ -431,13 +431,7 @@ button:focus {
     .works {
         font-size: 2.5em;
     }
-    .scrollDown {
-        left: calc(48% - 5px);
-    }
-    .scrollDown--active {
-        left: calc(100% - 75px);
-        top: calc(100% - 100px);
-    }
+    
 }
 @media (max-width: 767px) {
     .bigheadline {
@@ -453,16 +447,6 @@ button:focus {
 
         font-size: 2em;
     }
-    .scrollDown {
-        top: calc(25vh - 80px);
-    }
-    .scrollDown--active {
-        left: calc(100% - 75px);
-        top: calc(100% - 90px);
-    }
-    .top_nav {
-        background-color: #222222;
-    }
     .nav_icon {
         z-index: 3;
     }
@@ -472,14 +456,7 @@ button:focus {
         margin-bottom: 0;
     }
 
-    .scrollDown {
-        top: calc(20vh - 110px);
-        left: 44%;
-    }
-    .scrollDown--active {
-        left: calc(100% - 70px);
-        top: calc(100% - 100px);
-    }
+    
 }
 @media (max-width: 359px) {
     .bigheadline {
@@ -497,6 +474,7 @@ button:focus {
     position: relative;
     background: rgb(0, 0, 0);
     height: 67px;
+    box-shadow: rgba(39, 39, 39, 0.7) 0px 10px 30px -10px;
 }
 
 .nav-wrap {
@@ -616,7 +594,7 @@ button:focus {
 }
 .about-desc {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 
     color: rgb(0, 0, 0);
 }
@@ -698,7 +676,7 @@ button:focus {
         width: 100%;
     }
     .about-area {
-        padding: 70px 0 0px 0;
+        padding: 30px 0 0px 0;
     }
     .about_icon {
         margin-top: 30px;
@@ -1017,51 +995,84 @@ button:focus {
     background-color: rgb(0, 0, 0);
 }
 .row:nth-of-type(1) .project_card_text {
-    width: 175%;
-    position: absolute;
+    padding-top: 30px;
+    position: relative;
     z-index: 2;
-    top: calc(40% - 80px);
+}
+.row:nth-of-type(1) .project_card_text h2{
+    width: 150%;
+    z-index: 2;
+    position: relative;
+    background-color: #2b2b2bbb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
 }
 .row:nth-of-type(2) .project_card_text {
-    width: 150%;
+    padding-top: 30px;
     position: absolute;
-    z-index: 2;
-    top: calc(50% - 80px);
     right: 0;
+    width: 150%;
+    z-index: 2;
 }
-
+.row:nth-of-type(2) .project_card_text h2{
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background-color: #2b2b2bbb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+}
 .project_card_text span {
     font-size: 15px;
     font-family: Montserrat, sans-serif;
-    color: #888888;
+    color: #808080;
 }
 @media (max-width: 767px) {
     .row:nth-of-type(1) .project_card_text {
         position: relative;
         width: 100%;
-        background-color: white;
-        padding: 20px 0 20px 0;
-        margin-top: 3px;
-        border: 1px solid rgb(230, 230, 230);
-        box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.3);
+        padding: 15px 0;
+        background-color: #2b2b2bbb;
+        box-shadow: 5px 3px 7px 0px rgba(0,0,0,0.3);
     }
     .row:nth-of-type(2) .project_card_text {
         position: relative;
         width: 100%;
-        background-color: white;
-        margin-top: -8px;
-        padding: 20px 0;
-        border: 1px solid rgb(230, 230, 230);
-        box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.3);
+        padding: 15px 0;
+        background-color: #2b2b2bbb;
+        box-shadow: 5px 3px 7px 0px rgba(0,0,0,0.3);
+    }
+    .row:nth-of-type(1) .project_card_text h2{
+        position: relative;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+    .row:nth-of-type(2) .project_card_text h2{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        box-shadow: none;
+
     }
     .project_card_img {
         background-color: #000;
         box-shadow: 5px 1px 7px 0px rgba(0,0,0,0.3);
-        
+        padding: 0;
+    }
+    .project_card_text span {
+        color: #cacaca;
     }
 }
 .content-v-img img{
-    width: 900px !important;
+    width: 1000px !important;
 }
 /*///////////////////////////////////////////////////////////////////
 //**Skill Section
@@ -1336,7 +1347,7 @@ button:focus {
 //  07 - Contact
 /////////////////////////////////////////////////////////////////////*/
 .contact-section {
-    padding: 0px 0;
+    padding: 80px 0;
     z-index: -5;
     background: #f0f2f5;
     padding-bottom: 10px;
