@@ -441,7 +441,8 @@ button:focus {
         z-index: 3;
     }
     #header {
-        background-position: unset;
+        
+        background-size: unset;
     }
 }
 @media (max-width: 537px) {
