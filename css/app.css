@@ -171,9 +171,9 @@ button:focus {
     .top_nav {
         margin-top: 25px;
         position: fixed;
-        background-color: rgba(245, 70, 70, 0);
+        background-color: rgba(0, 0, 0, 0);
         transition: all .3s;
-
+        box-shadow: none;
     }
     .top_nav_menu {
         display: block;
@@ -548,7 +548,7 @@ button:focus {
 }
 @media (max-width: 767px) {
     #navigation {
-        visibility: hidden;
+        display: none;
         height: 0px;
     }
     .logo-text {
@@ -1037,14 +1037,14 @@ button:focus {
         position: relative;
         width: 100%;
         padding: 15px 0;
-        background-color: #2b2b2bbb;
+        background-color:rgba(43, 43, 43, 0.75);
         box-shadow: 5px 3px 7px 0px rgba(0,0,0,0.3);
     }
     .row:nth-of-type(2) .project_card_text {
         position: relative;
         width: 100%;
         padding: 15px 0;
-        background-color: #2b2b2bbb;
+        background-color:rgba(43, 43, 43, 0.75);
         box-shadow: 5px 3px 7px 0px rgba(0,0,0,0.3);
     }
     .row:nth-of-type(1) .project_card_text h2{
